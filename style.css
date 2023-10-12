@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    
+    margin: 0;
 }
 
 body, span, section{
@@ -17,6 +17,10 @@ header .content, main .content{
     max-width: 1224px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.bx{
+    font-size: 30px;
 }
 
 section{
@@ -84,42 +88,94 @@ section{
 .welcomeSection{
     display: grid;
     text-align: center;
-    padding: 150px 50px;
+    padding: 200px 50px;
     font-size: 40px;
     place-items: center;
+}
+
+.content p{
+    font-family: 'gilroy', Arial, sans-serif;
+    text-align: justify;
 }
 
 .container-updates{
     display: flex;
 }
 
-.section2 .content{
+.section2 .content, .section3 .content, .section4 .content{
     padding: 80px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .section2 .sectionFigure{
     margin: 0;
-    width: calc(50% - 40px);
+    width: calc(40% - 40px);
 }
 .section2 .sectionText{
     width: calc(50% - 40px);
-    text-align: left;
 }
 
-.mainSection h2{
+.section3 #updates-header{
+    margin: 0;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.section3 {
+    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+}
+
+.section3 .sectionText{
+    width: calc(50% - 40px);
+    font-size: 30px;
+}
+
+.section3 .sectionFigure{
+    margin: 0;
+    width: calc(40% - 40px);
+}
+
+.section3 p, .section3 h2, .section4 p, .section4 h2{
+    text-align: left;
+    color: #FFFFFF;
+}
+.section3 h1{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+.section4{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.section4 .sectionText{
+    width: calc(40% - 40px);
+    font-size: 30px;
+}
+
+.section4 .sectionFigure{
+    width: calc(60% - 40px);
+}
+
+#codeimg{
+    border-radius: 8px;
+}
+
+.section2 .content h2, .section2 p{
+    color: #222;
+}
+
+.site-container h2{
     margin-bottom: 20px;
     line-height: 1.3em;
-    color: #222;
     font-size: 35px;
 }
 
-.mainSection p{
+.site-container p{
     font-size: 24px;
     line-height: 1.5em;
-    color: #2f2f2f;
 }
 /* footer */
 footer{

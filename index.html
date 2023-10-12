@@ -5,6 +5,7 @@
     <title>Home</title>
     <link rel="icon" href="images/Logo.png">
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="myscripts.js"></script>
 </head>
 <body>
@@ -18,12 +19,12 @@
                 <li class="menuList-subItem"><a href="#">About Us</a></li>
                 <li class="menuList-subItem"><a href="#">Contact US</a></li>
             </ul>
-            <button type="submit" style="border: none; background: none;" onclick="toggleDarkMode()"><img id="appareanceB" src="images/sitewide-headers/dark-theme.svg" alt="darkmode"></button>
+            <i class='bx bx-user'></i>
         </nav>
 	</div>
     </header>
     <main role = main>
-        <span class="mainSection">
+        <span class="site-container">
         <section class="section1">
             <div class="content">
                 <div class="welcomeSection">
@@ -36,7 +37,7 @@
                     <img src="images/Additional/thinking-face.svg" alt="img" class="sectionFigure">
                 <div class="sectionText">
                     <h2>Why in the hell did I create this website?</h2>
-                <p>This page was created to showcase my web development skills. 
+                <p class = "flex-txt">This page was created to showcase my web development skills. 
                     My plan is to document all the projects I create as I continue 
                     to learn HTML, CSS, and JavaScript. I'm genuinely excited about 
                     the creative possibilities these coding languages offer.
@@ -45,15 +46,36 @@
             </div>
         </section>
         <section class="section3">
+                <h1 id="updates-header">Next Updates Down Here ;)</h1>
             <div class="content">
-                <h2>Next updates</h2>
-                <p>In the next updates I'll be adding an option to change the language of the webpage. </p>
-                    <ul>
-                        <span>The following languages will be available in the next update:</span>
-                        <li>Spanish</li>
-                        <li>English</li>
-                        <li>Japanese</li>
-                    </ul>
+                <div class="sectionText">
+                    <h2>More languages!</h2>
+                    <p>A language option will be added in the next update so you can change the language
+                        to Spanish, english or even Japanese. All of this will be translated by me using my own knowledge.
+                    </p>
+                </div>
+                    <img src="images/Additional/Flags.png" alt="Flags" class="sectionFigure">
+            </div>
+            
+        </section>
+        <section class="section4">
+            <div class="content">
+                <img src="images/Additional/buttons-update.png" alt="visual studio" class="sectionFigure" id="codeimg">
+                    <div class="sectionText">
+                        <h2>THE BUTTONS WILL FINALLY WORK!</h2>
+                        <p>The moment everyone has been waiting for will finally arrive to the website!
+                            The buttons will be totally working as expected for the next updates.
+                        </p>
+                    </div>
+            </div>
+        </section>
+        <section class="section5">
+            <div class="content">
+                    <div class="sectionText">
+                        <h2>Nav menu 4 mobile devices</h2>
+                        <p>A new navigation menu will be implemented in the next updates to ensure a good experience for
+                            mobile users. This will be located at the top right corner of the website.</p>
+                    </div>
             </div>
         </section>
     </span>
