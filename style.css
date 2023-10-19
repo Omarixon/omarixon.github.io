@@ -86,8 +86,9 @@ section{
 }
 
 .welcomeSection{
-    display: grid;
+    display: flex;
     text-align: center;
+    justify-content: center;
     padding: 200px 50px;
     font-size: 40px;
     place-items: center;
@@ -95,18 +96,18 @@ section{
 
 .content p{
     font-family: 'gilroy', Arial, sans-serif;
-    text-align: justify;
 }
 
 .container-updates{
     display: flex;
 }
 
-.section2 .content, .section3 .content, .section4 .content{
+.section2 .content, .section4 .content{
     padding: 80px 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .section2 .sectionFigure{
@@ -115,6 +116,7 @@ section{
 }
 .section2 .sectionText{
     width: calc(50% - 40px);
+    text-align: justify;
 }
 
 .section3 #updates-header{
@@ -122,28 +124,94 @@ section{
     background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 
-.section3 {
+.section3{
     background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
 }
 
-.section3 .sectionText{
-    width: calc(50% - 40px);
-    font-size: 30px;
+.section3 .content{
+    padding: 40px 20px 65px 20px;
 }
 
-.section3 .sectionFigure{
-    margin: 0;
-    width: calc(40% - 40px);
-}
-
-.section3 p, .section3 h2, .section4 p, .section4 h2{
-    text-align: left;
-    color: #FFFFFF;
-}
 .section3 h1{
     text-align: center;
     color: #FFFFFF;
     font-size: 25px;
+}
+
+.section3 .sectionFigure{
+    margin: 0;
+    max-width: 750px;
+}
+
+.section3 .sectionTxt{
+    text-align: center;
+    color: #ffffff;
+    margin: 10px 60px;
+}
+
+.s3-laptop-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.slideImage{
+    position: absolute;
+    display: flex;
+    height: 343px;
+    width: 550px;
+    transform: translateY(-5px);
+    overflow: hidden;
+}
+
+.s3-laptop-img .innerImage{
+    object-fit: cover;
+    flex: 1 0 100%;
+    width: 100%;
+    animation: slide 10s infinite ease-in-out;
+}
+
+@keyframes slide{
+    0%, 20%{
+        transform: translateX(0);
+    }
+    25%, 50%{
+        transform: translateX(-100%);
+    }
+    55%, 85%{
+        transform: translateX(-200%);
+    }
+    90%, 100%{
+        transform: translateX(0%);
+    }
+}
+
+.s3-languageTxt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1700px;
+    color: #fff;
+    position: absolute;
+    font-size: 100px;
+    letter-spacing: 6px;
+}
+
+.s3-languageTxt .espTxt, .s3-languageTxt .japTxt{
+    flex: 0 0 400px;
+    opacity: 70%;
+}
+
+.s3-languageTxt .japTxt{
+    text-align: center;
+}
+
+.section4 p, .section4 h2{
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .section4{
@@ -152,11 +220,14 @@ section{
 
 .section4 .sectionText{
     width: calc(40% - 40px);
-    font-size: 30px;
 }
 
 .section4 .sectionFigure{
     width: calc(60% - 40px);
+}
+
+.section4 p{
+    text-align: justify;
 }
 
 #codeimg{
